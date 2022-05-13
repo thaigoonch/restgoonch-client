@@ -1,4 +1,4 @@
-module github.com/thaigoonch/grpcgoonch-nonheadless-client
+module github.com/thaigoonch/restgoonch-client
 
 go 1.17
 
@@ -18,6 +18,7 @@ require (
 	github.com/prometheus/common v0.34.0 // indirect
 	github.com/prometheus/procfs v0.7.3 // indirect
 	github.com/thaigoonch/grpcgoonch-nonheadless v0.0.0-20220504063030-3de96144b250
+	github.com/thaigoonch/restgoonch v0.0.0-20220513203656-7ebb885c0ff2
 	golang.org/x/sys v0.0.0-20220503163025-988cb79eb6c6 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	google.golang.org/genproto v0.0.0-20220503193339-ba3ae3f07e29 // indirect

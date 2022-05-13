@@ -1,21 +1,21 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: grpcgoonch-nonheadless-client-cronjob
+  name: restgoonch-client-cronjob
   labels:
-    app: grpcgoonch-nonheadless-client
+    app: restgoonch-client
 spec:
   schedule: "0/8 * * * *"
   jobTemplate:
     metadata:
       labels:
-        app: grpcgoonch-nonheadless-client
+        app: restgoonch-client
     spec:
       template:
         spec:
           containers:
-          - name: grpcgoonch-nonheadless-client
-            image: thaigoonch/grpcgoonch-nonheadless-client:1.5
+          - name: restgoonch-client
+            image: thaigoonch/restgoonch-client:0.1
             imagePullPolicy: IfNotPresent
           restartPolicy: Never
           nodeSelector:

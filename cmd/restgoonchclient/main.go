@@ -6,27 +6,16 @@ import (
 	"net/http"
 	"sync"
 
-	grpc_prometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
-	grpcgoonch "github.com/thaigoonch/grpcgoonch-nonheadless/service"
+	restgoonch "github.com/thaigoonch/restgoonch/service"
 	"golang.org/x/net/context"
-	"google.golang.org/grpc"
-
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/grpclog"
 )
 
 var (
-	port     = 9000
+	port     = 8080
 	promPort = 9099
 )
 
 func main() {
-	reg := prometheus.NewRegistry()
-	grpcMetrics := grpc_prometheus.NewClientMetrics()
-	reg.MustRegister(grpcMetrics)
-
 	// Create an http server for prometheus
 	httpServer := &http.Server{
 		Handler: promhttp.HandlerFor(reg, promhttp.HandlerOpts{}),
