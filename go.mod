@@ -4,7 +4,10 @@ go 1.17
 
 require (
 	github.com/golang/protobuf v1.5.2
-	github.com/thaigoonch/restgoonch v0.0.0-20220513233125-c100804a31d3
+	github.com/thaigoonch/restgoonch v0.0.0-20220516225601-0120b4b194a7
 )
 
-require google.golang.org/protobuf v1.28.0 // indirect
+require (
+	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
+	google.golang.org/protobuf v1.28.0 // indirect
+)
