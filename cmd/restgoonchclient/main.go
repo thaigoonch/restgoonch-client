@@ -29,7 +29,7 @@ func main() {
 		wg.Add(1)
 		go func() {
 			for i := 0; i < 200; i++ {
-				resp, err := http.Post("http://0.0.0.0:8080/service", "application/x-binary", bytes.NewReader(req))
+				resp, err := http.Post("http://restgoonch-service:8080/service", "application/x-binary", bytes.NewReader(req))
 				if err != nil {
 					log.Fatalf("Unable to read from the server : %v", err)
 				} /* else {
