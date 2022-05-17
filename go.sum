@@ -179,8 +179,8 @@ github.com/stretchr/objx v0.1.1/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81PSLYec5m4=
-github.com/thaigoonch/restgoonch v0.0.0-20220517153028-81304868ebfa h1:/sO8p32pTUmbPRiGRsBzWR9RVmzvKYjhs1gbhp4JVU0=
-github.com/thaigoonch/restgoonch v0.0.0-20220517153028-81304868ebfa/go.mod h1:d660dmSMqdnFQB5dJIba59phlOUK/5e2boAU6hs7s+0=
+github.com/thaigoonch/restgoonch v0.0.0-20220517165552-1f6cd3ea3258 h1:KbJ6TO7tXZL/yEdbaKmHw5twhawbzDAFkvkWdY1Ko9A=
+github.com/thaigoonch/restgoonch v0.0.0-20220517165552-1f6cd3ea3258/go.mod h1:d660dmSMqdnFQB5dJIba59phlOUK/5e2boAU6hs7s+0=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.32/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
