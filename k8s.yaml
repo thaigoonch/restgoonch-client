@@ -15,7 +15,7 @@ spec:
         spec:
           containers:
           - name: restgoonch-client
-            image: thaigoonch/restgoonch-client:1.4
+            image: thaigoonch/restgoonch-client:1.5
             imagePullPolicy: IfNotPresent
           restartPolicy: Never
           nodeSelector:

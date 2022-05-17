@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/golang/protobuf v1.5.2
-	github.com/thaigoonch/restgoonch v0.0.0-20220516225601-0120b4b194a7
+	github.com/thaigoonch/restgoonch v0.0.0-20220517153028-81304868ebfa
 )
 
 require (

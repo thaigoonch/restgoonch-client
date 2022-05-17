@@ -11,6 +11,11 @@ import (
 	restgoonch "github.com/thaigoonch/restgoonch/service"
 )
 
+var (
+	host = "restgoonch-service"
+	port = 8080
+)
+
 func main() {
 	text := "encrypt me"
 	key := []byte("#89er@jdks$jmf_d")
@@ -29,7 +34,7 @@ func main() {
 		wg.Add(1)
 		go func() {
 			for i := 0; i < 200; i++ {
-				resp, err := http.Post("http://restgoonch-service:8080/service", "application/x-binary", bytes.NewReader(req))
+				resp, err := http.Post(fmt.Sprintf("http://%s:%d/service", host, port), "application/x-binary", bytes.NewReader(req))
 				if err != nil {
 					log.Fatalf("Unable to read from the server : %v", err)
 				} /* else {
